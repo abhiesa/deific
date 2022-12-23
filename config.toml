@@ -1,0 +1,546 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Deific'
+
+Paginate = 3
+enableRobotsTXT = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+#[[Menus.main]]
+#identifier = "blog"
+#name = "Blog"
+#title = "Blog posts"
+#url = "/blogs"
+#weight = 1
+
+#[[Menus.main]]
+#identifier = "gallery"
+#name = "Gallery"
+#title = "Blog posts"
+#url = "/gallery"
+#weight = 2
+
+[params]
+title = "Deific"
+description = "Towards Independence"
+favicon = "/deific-logo.jpg" #img
+useBootstrapCDN = true #false for local
+animate = true
+registrationUrl = "/deific-registration-certificate.jpg"
+copyrightUrl = "/deific-registration-certificate.jpg"
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "Deific"
+  disableSearch = true
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  intro = "Hi, my name is"
+  title = "Monika Misra"
+  subtitle = "I work with specially abled children"
+  content = "I am a special educator. I special needs student to build websites that looks great, feels fantastic, and functions correctly."
+  image = "/deific-logo.jpg"
+
+    [params.hero.button]
+    enable = false
+    name = "Resume"
+    url = "/monika-misra.pdf"
+    download = true
+    newPage = true
+
+#[[params.hero.socialLinks.fontAwesomeIcons]]
+#icon = "fab fa-github"
+#url = "https://example.com"
+
+#[[params.hero.socialLinks.fontAwesomeIcons]]
+#icon = "fab fa-twitter"
+#url = "https://example.com"
+
+#[[params.hero.socialLinks.customIcons]]
+#icon = "/fav.png"
+#url = "https://example.com"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "/images/me.png"
+  content = """
+I am an Experienced, Versatile, dedicated special educator with 18+ years experience working with neurotypical as well as special students, with a focus on the individual needs of special students. 
+Experience Working with Students with Autism, Speech Impairments, and Physical Disabilities. 
+Empathetic and accommodating in the design and implementation of hands-on lessons, familiar with the challenges associated with teaching special needs children. 
+Remains positive under times of stress or conflict.
+
+#### Services offered
+
+- Parent Empowerment Programs
+
+- Speech and Language Development
+
+- 1:1 Sessions
+
+- Online webinars
+
+- Online classes
+
+- Online sessions
+
+"""
+
+    [params.about.flyer]
+    enable = true
+    image = "/deific-flyer.jpg"
+    items = [ "HTML", "CSS", "JavaScript", "React", "Node", "Express" ]
+    [params.about.skills]
+    enable = false
+    title = "Here are a few technologies I've been working with recently:"
+    items = [ "HTML", "CSS", "JavaScript", "React", "Node", "Express" ]
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Teaching & Training Incharge"
+    company = "Sunrise Learning"
+    companyUrl = "#"
+    date = "July 2019 - Present"
+    content = """
+I am currently working as a teaching and training incharge at Sunrise Learning, Noida for  online platform. 
+I am currently working to create Home Programs and IEP's of Special need children.
+
+- Conducted various parent empowerment programs (mom and child program).
+- Participated and gave presentations in various workshops.
+- Created and managed IEPs to define student learning objectives and educational strategies, in addition to applying instructional knowledge and methods to support goals.
+- Maintained student safety in classroom and outside environments.
+- Spoke with parents about student needs to garner additional support.
+- Made planners for academic sessions.
+- Administered assessments to determine each student's specific educational and social needs.
+- Provided diverse assistance to teachers, including clerical support, classroom management, and document coordination.
+- Worked with individual students to provide personalized educational, behavioral and emotional support.
+- Documented behaviors, interventions, and results.
+- Taught multiple subjects to students with intellectual or emotional disabilities. 
+- Developed and implemented classroom routines to address varying student needs.
+- Prepared instructional materials for group and one-on-one use.
+- Collected, analyzed, and tracked data on student progress.
+- Set up visual aids, equipment, and classroom displays.
+- Implemented curriculum with a life-based approach.
+- Met with a team of professionals from different disciplines to implement a comprehensive action plan.
+- Supported other teachers.
+- Kept learning environments focused, inclusive, and supportive at all times.
+- Communicated nonverbally with children to provide comfort, encouragement, and positive reinforcement.
+- Cultivated connections and strong student rapport to foster classroom engagement, in addition to recording student progress to inform parents and school administration.
+- Led activities that developed students' physical, emotional and social growth.
+- Created learning and content strategies to meet the needs of mentally and physically disabled students.
+- Organized instruction material, including constructing bulletin boards and setting up work areas.
+- Coordinated special education students and teacher assistant schedules with the master schedule.
+
+"""
+    [[params.experience.items]]
+    job = "Visiting Parent Counselor"
+    company = "Brain Center"
+    companyUrl = "#"
+    date = "March 2022 - Present"
+    content = """
+Working in Brain Center, Noida, as a Visiting Parent Counselor from March 2022"""
+    [[params.experience.items]]
+    job = "Special Education Teacher"
+    company = "Sunrise learning"
+    companyUrl = "#"
+    date = "Feb 2011 to March 2015"
+    content = """
+Worked in Sunrise learning, Noida, as a Special Education Teacher from July 2015 to July 2019
+- 4 Years"""
+    [[params.experience.items]]
+    job = "Trained Graduate Teacher (TGT)"
+    company = "Yadu Public School"
+    companyUrl = "#"
+    date = "Feb 2011 to March 2015"
+    content = """
+Worked in Yadu Public School, Noida, as a TGT from Feb 2011 to March 2015
+- 4 Years"""
+    [[params.experience.items]]
+    job = "Teacher"
+    company = "New Way Senior Secondary School"
+    companyUrl = "#"
+    date = "Feb 2008 to March 2010"
+    content = """
+Worked in New Way Senior Secondary School, Lucknow, as a teacher from Feb 2008 to March 2010
+- 2 years"""
+    [[params.experience.items]]
+    job = "Teacher"
+    company = "Awadh Educational Academy"
+    companyUrl = "#"
+    date = "Jan 2007 to Feb 2008"
+    content = """
+Worked in Awadh Educational Academy, Lucknow, as a teacher from Jan 2007 to Feb 2008
+- 1 year"""
+    [[params.experience.items]]
+    job = "Teacher"
+    company = "Prakhar Montessori School"
+    companyUrl = "#"
+    date = "April 2005 to July 2006"
+    content = """
+Worked in Prakhar Montessori School, Lucknow, as a teacher from April 2005 to July 2006
+- 1.5 years"""
+    [[params.experience.items]]
+    job = "Assistant teacher"
+    company = "Saint Vivekananda Academy"
+    companyUrl = "#"
+    date = "2004"
+    content = """
+Worked in Saint Vivekananda Academy, Lucknow, as  a assistant teacher in 2004
+- 6 months"""
+
+#      [params.experience.items.featuredLink]
+#      enable = true
+#      name = "View the project"
+#      url = "https://example.com"
+
+#    [[params.experience.items]]
+#    job = "Software Developer"
+#    company = "Amazon"
+#    companyUrl = "https://example.com"
+#    date = "Sep 2020 - Dec 2021"
+#    content = """
+#I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+#- Lead backend developer for a product.
+#- Created a frontend design for a product.
+#"""
+#
+#      [params.experience.items.featuredLink]
+#      enable = true
+#      url = "https://example.com"
+#
+#      [params.experience.items.info]
+#      enable = true
+#      content = "I worked as a software developer for more than one year in Amazon."
+#
+#    [[params.experience.items]]
+#    job = "Junior Software Developer"
+#    company = "Apple"
+#    companyUrl = "https://example.com"
+#    date = "Jan 2020 - Aug 2020"
+#    content = """
+#I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+#- Lead backend developer for a product.
+#- Created a frontend design for a product.
+#"""
+
+#      [params.experience.items.info]
+#      enable = false
+
+#      [params.experience.items.featuredLink]
+#      enable = true
+#      url = "https://example.com"
+
+#    [[params.experience.items]]
+#    job = "UI/UX Designer"
+#    company = "Netflix"
+#    companyUrl = "https://example.com"
+#    date = "June 2017 - Nov 2019"
+#    content = """
+#I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+#- Lead backend developer for a product.
+#- Created a frontend design for a product.
+#"""
+
+#      [params.experience.items.featuredLink]
+#      enable = true
+#      url = "https://example.com"
+
+#    [[params.experience.items]]
+#    job = "Product Designer"
+#    company = "Google"
+#    companyUrl = "https://example.com"
+#    date = "Feb 2016 - Mar 2017"
+#    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  [params.education]
+  enable = true
+  index = false
+
+
+    [[params.education.items]]
+    title = "B.Ed. Special Ed. (Intellectual Disability)"
+    #date = "2013 - 2015"
+    #GPA = "3.8 out of 5.0"
+    #content = """
+#Extracurricular Activities
+#  - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+#  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
+      [params.education.items.school]
+      name = "CRSU, University, Faridabad"
+      url = "#"
+    
+    [[params.education.items]]
+    title = "One-year certification course on Autism Spectrum Conditions"
+      [params.education.items.school]
+      name = "Sunrise learning, Noida"
+      url = "#"
+    
+    [[params.education.items]]
+    title = "Certification Program on Basic Principles Of Classroom Management Of ASD Students"
+    date = "2017"
+      [params.education.items.school]
+      name = "Sunrise learning, Noida"
+      url = "#"
+    [[params.education.items]]
+    title = "P.G. Diploma in Disaster Management"
+    date = "2010"
+      [params.education.items.school]
+      name = "IGNOU"
+      url = "#"
+    [[params.education.items]]
+    title = "B.Ed. (Geography, Economics)"
+    date = "2007"
+      [params.education.items.school]
+      name = "Lucknow University"
+      url = "#"
+    [[params.education.items]]
+    title = "Post-Graduation (Geography)"
+    date = "2005"
+      [params.education.items.school]
+      name = "Lucknow University"
+      url = "#"
+    [[params.education.items]]
+    title = "Graduation (Psychology, Geography, Economics)"
+    date = "2003"
+      [params.education.items.school]
+      name = "Lucknow University"
+      url = "#"
+    [[params.education.items]]
+    title = "Intermediate"
+    date = "2000"
+      [params.education.items.school]
+      name = "Lal Bagh Girls Inter College, Lucknow"
+      url = "#"
+    [[params.education.items]]
+    title = "High School"
+    date = "1998"
+      [params.education.items.school]
+      name = "Lal Bagh Girls Inter College, Lucknow"
+      url = "#"
+    
+
+
+#    [[params.education.items]]
+#    title = "Bachelor of Science in Computer Science"
+#    date = "2009 - 2013"
+#    GPA = "3.9 out of 5.0"
+#    content = """
+#I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+#- [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+#- Face mask detection using a single convolutional neural network.
+#Extracurricular Activities
+#  - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+#  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
+
+#      [params.education.items.school]
+#      name = "Massachusetts Institute of Technology"
+#      url = "https://example.org"
+
+#      [params.education.items.featuredLink]
+#      enable = true
+#      name = "My academic record"
+#      url = "https://example.com"
+
+#    [[params.education.items]]
+#    title = "High School"
+#    GPA = "4.2 out of 5.0"
+
+#      [params.education.items.school]
+#      name = "Thomas Jefferson High School for Science and Technology."
+#      url = "https://example.org"
+
+#      [params.education.items.featuredLink]
+#      enable = true
+#      url = "https://example.com"
+
+  [params.skills]
+  enable = true
+
+ #   [[params.skills.items]]
+ #   title = "Google kickstart runner"
+ #   content = "I solved all problems with optimal solution."
+ #   url = "https://example.com"
+
+    [[params.skills.items]]
+    title = "Technology use"
+    [[params.skills.items]]
+    title = "Teacher support"
+    [[params.skills.items]]
+    title = "Classroom management"
+    [[params.skills.items]]
+    title = "Educational assistance"
+    [[params.skills.items]]
+    title = "Documentation"
+    [[params.skills.items]]
+    title = "Social development and integration"
+    [[params.skills.items]]
+    title = "IEP compliance"
+    [[params.skills.items]]
+    title = "Behaviour improvements"
+    [[params.skills.items]]
+    title = "Activity planning"
+    [[params.skills.items]]
+    title = "Student records management"
+    [[params.skills.items]]
+    title = "Student counselling"
+    [[params.skills.items]]
+    title = "Student progress reporting"
+    [[params.skills.items]]
+    title = "Child development"
+    [[params.skills.items]]
+    title = "Punctual"
+    [[params.skills.items]]
+    title = "Diverse classroom settings"
+    [[params.skills.items]]
+    title = "Advising"
+    [[params.skills.items]]
+    title = "Critical thinking"
+    [[params.skills.items]]
+    title = "Positive learning environment"
+    [[params.skills.items]]
+    title = "Expertise in conducting parent empowerment programs"
+    [[params.skills.items]]
+    title = "Experience with special-needs students"
+    [[params.skills.items]]
+    title = "Student motivation"
+    [[params.skills.items]]
+    title = "Diverse groups presentations"
+    [[params.skills.items]]
+    title = "Audio-visual aid implementation"
+    [[params.skills.items]]
+    title = "Identifying problems"
+    [[params.skills.items]]
+    title = "Managing classrooms for diverse populations"
+    [[params.skills.items]]
+    title = "Creative learning strategies"
+    [[params.skills.items]]
+    title = "Teaching/tutoring"
+    [[params.skills.items]]
+    title = "Positive reinforcement"
+    [[params.skills.items]]
+    title = "Outstanding social skills"
+    [[params.skills.items]]
+    title = "Classroom discipline"
+    [[params.skills.items]]
+    title = "Effective time management"
+    [[params.skills.items]]
+    title = "Expertise in Speech, Language, and communication"
+    [[params.skills.items]]
+    title = "Active listening"
+    [[params.skills.items]]
+    title = "Creative questioning"
+    [[params.skills.items]]
+    title = "Memorisation and recall"
+    [[params.skills.items]]
+    title = "Documentation and reporting"
+    [[params.skills.items]]
+    title = "Student centred learning"
+    [[params.skills.items]]
+    title = "Computer proficient"
+
+  [params.achievements]
+  enable = false
+
+ #   [[params.achievements.items]]
+ #   title = "Google kickstart runner"
+ #   content = "I solved all problems with optimal solution."
+ #   url = "https://example.com"
+
+  [params.projects]
+  enable = false
+
+    [[params.projects.items]]
+    title = "Hugo Profile"
+    content = "A highly customizable and mobile first Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile.png"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://hugo-profile.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fa fa-envelope"
+      url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/hugo-profile"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-twitter"
+      url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+    [[params.projects.items]]
+    title = "Image Converter"
+    content = "A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django."
+    image = "/images/projects/converter.jpg"
+    badges = [ "Django", "Bootstrap" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://django-converter.herokuapp.com"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/converter"
+
+    [[params.projects.items]]
+    title = "Hugo Profile V2"
+    content = "A clean and simple Hugo template for personal portfolio and blog."
+    image = "/images/projects/profile2.jpg"
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
+
+      [params.projects.items.featured]
+      name = "Demo V2"
+      link = "https://hugo-profile-2.netlify.app"
+
+      [[params.projects.items.links]]
+      icon = "fab fa-github"
+      url = "https://github.com/gurusabarish/HugoProfileV2"
+
+  [params.contact]
+  enable = true
+  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  email = "monika.misra09@gmail.com"
+  btnName = "Mail me"
+
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = false
+disableFeaturedImage = false
+
+[params.footer.socialNetworks]
+#github = "https://github.com"
+#linkedin = "https://linkedin.com"
+#twitter = "https://twitter.com"
+#instagram = "https://instagram.com"
+#facebook = "https://facebook.com"
+
+  [params.listPages]
+  disableFeaturedImage = false
